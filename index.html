@@ -1,289 +1,361 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curriculo</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Samuel Ferreira — Dev</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </head>
 
 <body>
-    <header id="cabecalho">
-        <div id="cabecalho-perfil">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBqzkMaKzbe6ZfqiceumAzX9m0pAgakZ-pw&s"
-                alt="">
-            <div>
-                <h2>Olá, eu sou</h2>
-                <h1>Samuel Ferreira</h1>
-                <p>Desenvolvedor Web</p>
+    <div id="cur"></div>
+    <div id="cur-ring"></div>
+
+    <div class="wrap">
+        <nav>
+            <div class="n-logo">&gt; <span>~/</span>samuel.dev</div>
+            <ul class="n-links">
+                <li><a href="#focus">Foco</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="n-status">
+                <div class="sdot"></div>Estagiário · Dev
             </div>
-        </div>
-        <div id="cabecalho-contato">
-            <div>
-                <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                <p>São Paulo - SP, Brasil</p>
-            </div>
+        </nav>
 
-            <div>
-                <i class="fa-solid fa-envelope" style="color: #000000;"></i>
-                <p><a href="mailto:cyanlettuce2745@gmail.com" target="_blank">cyanlettuce2745@gmail.com</a></p>
-            </div>
-
-            <div>
-                <i class="fa-brands fa-whatsapp" style="color: #000000;"></i>
-                <p><a href="https://wa.me/+5511950486252?text=Olá, Gostaria de desenvolver um projeto"
-                        target="_blank">(11) 95048-6252</a></p>
-            </div>
-
-            <div id="contato-redes-sociais">
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a></li>
-                    <li><a href="https://github.com/samuel208-max" target="_blank"><i class="fa-brands fa-github"
-                                style="color: #000000;"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section id="informacoes">
-
-            <div id="boxes">
-                <div id="box1">
-                    <div class="box" id="sobre-mim">
-                        <i class="fa-solid fa-user icon-superior" style="color: #000000;"></i>
-                        <h3>Sobre mim</h3>
-                        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes.
-                            Tenho experiência em HTML, CSS, JavaScript e frameworks modernos. Estou sempre em busca de
-                            novos
-                            desafios e oportunidades para aprender e crescer na área de desenvolvimento.</p>
-                    </div>
-
-                    <div class="box" id="cursos">
-                        <i class="fa-solid fa-graduation-cap icon-superior" style="color: #000000;"></i>
-                        <h3>Cursos</h3>
-                        <div>
-                            <h4>Programação de Jogos Digitais</h4>
-                            <p>Técnico</p>
-                            <p>início: 08/25 - previsão de término: 12/26</p>
-                            <p>Senac</p>
-                        </div>
-
-                        <div>
-                            <h4>Informática para internet</h4>
-                            <p>Técnico</p>
-                            <p>início: 04/25 - previsão de término: 06/26</p>
-                            <p>Senac</p>
-                        </div>
-
-                        <div>
-                            <h4>Programação em C#</h4>
-                            <p>Especialização</p>
-                            <p>início: 07/23 - término: 11/23</p>
-                            <p>Microlins</p>
-                        </div>
-
-                        <div>
-                            <h4>Programação em Java(básico)</h4>
-                            <p>Especialização</p>
-                            <p>início: 03/24 - término: 06/24</p>
-                            <p>Senai</p>
-                        </div>
-                        <div>
-                            <h4>Lógica de Programação</h4>
-                            <p>Especialização</p>
-                            <p>início: 07/22 - término: 12/22</p>
-                            <p>Prepara Cursos</p>
-                        </div>
-
-                        <div>
-                            <h4>Banco de Dados SQL</h4>
-                            <p>Especialização</p>
-                            <p>início: 02/23 - término: 05/23</p>
-                            <p>Prepara Cursos</p>
-                        </div>
-                    </div>
-
-                    <div class="box" id="projetos-escolares">
-                        <h1>Projetos Escolares</h1>
-                        <ul>
-                            <li style="text-transform: uppercase;"><i class="fa-solid fa-bookmark"
-                                    style="color: #000000;"></i> ecoar - usp</li>
-                            <li><i class="fa-solid fa-bookmark" style="color: #000000;"></i> Stackinho - Senac</li>
-                        </ul>
+        <!-- HERO -->
+        <section id="hero">
+            <canvas id="three-canvas"></canvas>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-l" id="heroL">
+                    <div class="hero-age">18 anos · estudando desde os 15</div>
+                    <h1 class="hero-name">Samuel<span class="accent">Ferreira</span></h1>
+                    <p class="hero-sub"><span id="typed"></span><span class="blink"></span></p>
+                    <p class="hero-bio">
+                        Desenvolvedor com <strong>18 anos</strong>, programando desde os 15.
+                        Atualmente estagiário trabalhando com <strong>Node.js e React</strong>.
+                        Explorando <strong>Flutter, PHP, MySQL e Unity/C#</strong>.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn-p"><i class="fa-solid fa-code-branch"></i>Ver Projetos</a>
+                        <a href="#contact" class="btn-o"><i class="fa-solid fa-terminal"></i>Contato</a>
                     </div>
                 </div>
-
-                <div id="box2">
-                    <div class="box" id="experiencia">
-                        <i class="fa-solid fa-briefcase icon-superior" style="color: #000000;"></i>
-                        <h3>Experiência Profissional</h3>
-
-                        <div>
-                            <h4>Desenvolvedor Web</h4>
-                            <div>
-                                <p>Borcelle</p>
-                                <p>2023 - Presente</p>
-                            </div>
-                            <p>Responsável pelo desenvolvimento e manutenção de sites, criação de interfaces modernas e
-                                implementação de soluções web para clientes.</p>
-                        </div>
-
-                        <div>
-                            <h4>Engenheiro de software</h4>
-                            <div>
-                                <p>Faustino</p>
-                                <p>2021 - 2022</p>
-                            </div>
-                            <p>Atuei no desenvolvimento de sistemas, realizando testes, correções e melhorias em
-                                aplicações web.</p>
-                        </div>
-
-                        <div>
-                            <h4>Gerente de Projetos</h4>
-                            <div>
-                                <p>Pense S.A</p>
-                                <p>2021</p>
-                            </div>
-                            <p>Gerenciei equipes e projetos de tecnologia, acompanhando prazos e garantindo a entrega de
-                                soluções eficientes.</p>
-                        </div>
+                <div class="hero-r" id="heroR">
+                    <div class="hero-r-inner">
+                        <div class="tf tf1"><i class="fa-brands fa-react" style="color:#61dafb"></i>React</div>
+                        <div class="tf tf2"><i class="fa-brands fa-node-js" style="color:#68a063"></i>Node.js</div>
+                        <div class="tf tf3"><i class="fa-solid fa-mobile-screen" style="color:#54c5f8"></i>Flutter</div>
+                        <div class="tf tf4"><i class="fa-brands fa-php" style="color:#777bb4"></i>PHP + MySQL</div>
+                        <div class="tf tf5"><i class="fa-solid fa-database" style="color:#f29111"></i>MySQL</div>
+                        <div class="tf tf6"><i class="fa-solid fa-gamepad" style="color:#a78bfa"></i>Unity / C#</div>
                     </div>
-
-                    <div class="box" id="habilidades">
-                        <i class="fa-solid fa-cogs icon-superior" style="color: #000000;"></i>
-                        <h3>Habilidades</h3>
-
-                        <div>
-                            <h2 style="text-transform: uppercase;">html</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 84%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 style="text-transform: uppercase;">css</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 74%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2>Java</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 70%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2>JavaScript</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 78%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 style="text-transform: uppercase;">c#</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 60%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 style="text-transform: uppercase;">sql</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 50%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2>Figma</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 66%;"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h2 style="text-transform: uppercase;">ui/ux</h2>
-                            <div class="barra">
-                                <div class="barra-inferior" style="width: 50%;"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box" id="baixe-curriculo">
-                        <i class="fa-solid fa-file" style="color: #000000;"></i>
-                        <h3>Baixe meu currículo</h3>
-                        <a href="" class="btn">Baixar</a>
-                    </div>
-
                 </div>
             </div>
-
-
-            <div class="box" id="projetos-pessoais">
-                <div id="projetos-pessoais-titulo">
-                    <i class="fa-solid fa-folder" style="color: #000000;"></i>
-                    <h3>Portfolio</h3>
-                </div>
-                <div id="projetos-lista">
-                    <div class="bloco-projeto">
-                        <a href="https://samuel208-max.github.io/ProjetoFormula/" target="_blank">
-                            <h4>Projeto Fórmula 1</h4>
-                            <p>
-                                Site que apresenta dados, curiosidades e estatísticas sobre pilotos, equipes e corridas
-                                da
-                                Fórmula 1.
-                            </p>
-                            <div class="img-projetos" id="img-Formula1"></div>
-                        </a>
-                    </div>
-
-                    <div class="bloco-projeto">
-                        <a href="https://samuel208-max.github.io/ProjetoCarrinhoJS/" target="_blank">
-                            <h4>Projeto de cadastro de produtos de adega</h4>
-                            <p>
-                                Sistema simples para cadastro, consulta e gerenciamento de produtos de uma adega,
-                                permitindo registrar informações como nome, tipo, quantidade e preço dos itens.
-                            </p>
-                            <div class="img-projetos" id="img-ProjetoCadastro"></div>
-                        </a>
-                    </div>
-
-                    <div class="bloco-projeto">
-                        <a href="">
-                            <h4>Cliber Consultoria</h4>
-                            <p>
-                                Site institucional para a empresa Cliber Consultoria, especializada em soluções de RH.
-                                Apresenta informações sobre serviços, equipe, contato e diferenciais na área de gestão
-                                de pessoas.
-                            </p>
-                            <div class="img-projetos" id="img-Cliber"></div>
-                        </a>
-                    </div>
-
-                    <div class="bloco-projeto">
-                        <a href="https://samuel208-max.github.io/stackinho/" target="_blank">
-                            <h4>Stackinho</h4>
-                            <p>
-                                Site inspirado no Stack Overflow, criado para alunos do Senac compartilharem dúvidas,
-                                respostas e conhecimento sobre programação e tecnologia.
-                            </p>
-                            <div class="img-projetos" id="img-Stackinho"></div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <script src="./assets/js/script.js"></script>
         </section>
-    </main>
+
+        <!-- STATS -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-num" data-target="3">0</div>
+                <div class="stat-label">Anos estudando</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" data-target="9">0</div>
+                <div class="stat-label">Tecnologias</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" data-target="4">0</div>
+                <div class="stat-label">Projetos</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num" data-target="18">0</div>
+                <div class="stat-label">Anos de idade</div>
+            </div>
+        </div>
+
+        <!-- FOCUS -->
+        <section class="sec" id="focus">
+            <div class="sh"><span class="sh-num">00</span>
+                <h2 class="sh-title">// foco atual</h2>
+                <div class="sh-line"></div>
+            </div>
+            <div class="focus-grid">
+                <div class="focus-card">
+                    <span class="focus-icon">⚛️</span>
+                    <div class="focus-title">Node.js + React</div>
+                    <p class="focus-desc">Desenvolvimento e manutenção de softwares no estágio. Construindo interfaces,
+                        APIs e corrigindo bugs em ambiente de produção real.</p>
+                    <span class="focus-badge">ESTÁGIO · ATIVO</span>
+                </div>
+                <div class="focus-card">
+                    <span class="focus-icon">📱</span>
+                    <div class="focus-title">Flutter</div>
+                    <p class="focus-desc">Aprendendo desenvolvimento multiplataforma com Flutter e Dart para criar apps
+                        mobile e web a partir de um único código.</p>
+                    <span class="focus-badge">APRENDENDO</span>
+                </div>
+                <div class="focus-card">
+                    <span class="focus-icon">🎮</span>
+                    <div class="focus-title">Unity + C#</div>
+                    <p class="focus-desc">Desenvolvendo lógica e jogos com Unity Engine e C# no curso técnico de
+                        Programação de Jogos Digitais no Senac.</p>
+                    <span class="focus-badge">CURSANDO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="sec" id="skills">
+            <div class="sh"><span class="sh-num">01</span>
+                <h2 class="sh-title">// habilidades</h2>
+                <div class="sh-line"></div>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">HTML / CSS</span><span class="sk-pct">87%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="87"></div>
+                    </div>
+                    <div class="sk-tag">Base sólida do frontend</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">JavaScript</span><span class="sk-pct">78%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="78"></div>
+                    </div>
+                    <div class="sk-tag">Vanilla + ES6+</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">React</span><span class="sk-pct">70%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="70"></div>
+                    </div>
+                    <div class="sk-tag">Em uso no estágio</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">Node.js</span><span class="sk-pct">68%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="68"></div>
+                    </div>
+                    <div class="sk-tag">Em uso no estágio</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">PHP</span><span class="sk-pct">62%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="62"></div>
+                    </div>
+                    <div class="sk-tag">Backend web</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">MySQL</span><span class="sk-pct">60%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="60"></div>
+                    </div>
+                    <div class="sk-tag">Banco relacional</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">C# / Unity</span><span class="sk-pct">55%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="55"></div>
+                    </div>
+                    <div class="sk-tag">Jogos digitais</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">Flutter</span><span class="sk-pct">38%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="38"></div>
+                    </div>
+                    <div class="sk-tag">Aprendendo</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">Java</span><span class="sk-pct">52%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="52"></div>
+                    </div>
+                    <div class="sk-tag">Curso Senai</div>
+                </div>
+                <div class="sk">
+                    <div class="sk-top"><span class="sk-name">Git</span><span class="sk-pct">65%</span></div>
+                    <div class="sk-bar">
+                        <div class="sk-fill" data-width="65"></div>
+                    </div>
+                    <div class="sk-tag">Versionamento</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="sec" id="education">
+            <div class="sh"><span class="sh-num">03</span>
+                <h2 class="sh-title">// formação</h2>
+                <div class="sh-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card"><span class="edu-badge">Cursando</span>
+                    <div class="edu-course">Prog. de Jogos Digitais</div>
+                    <div class="edu-school">Senac — Técnico</div>
+                    <div class="edu-period">08/2025 → 12/2026</div>
+                </div>
+                <div class="edu-card"><span class="edu-badge">Cursando</span>
+                    <div class="edu-course">Informática para Internet</div>
+                    <div class="edu-school">Senac — Técnico</div>
+                    <div class="edu-period">04/2025 → 06/2026</div>
+                </div>
+                <div class="edu-card"><span class="edu-badge done">Concluído</span>
+                    <div class="edu-course">Programação em C#</div>
+                    <div class="edu-school">Microlins — Especialização</div>
+                    <div class="edu-period">07/2023 → 11/2023</div>
+                </div>
+                <div class="edu-card"><span class="edu-badge done">Concluído</span>
+                    <div class="edu-course">Programação em Java</div>
+                    <div class="edu-school">Senai — Especialização</div>
+                    <div class="edu-period">03/2024 → 06/2024</div>
+                </div>
+                <div class="edu-card"><span class="edu-badge done">Concluído</span>
+                    <div class="edu-course">Lógica de Programação</div>
+                    <div class="edu-school">Prepara Cursos</div>
+                    <div class="edu-period">07/2022 → 12/2022</div>
+                </div>
+                <div class="edu-card"><span class="edu-badge done">Concluído</span>
+                    <div class="edu-course">Banco de Dados SQL</div>
+                    <div class="edu-school">Prepara Cursos</div>
+                    <div class="edu-period">02/2023 → 05/2023</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="sec" id="projects">
+            <div class="sh"><span class="sh-num">04</span>
+                <h2 class="sh-title">// projetos</h2>
+                <div class="sh-line"></div>
+            </div>
+            <div class="proj-grid">
+                <a href="#" class="proj-card">
+                    <div class="proj-thumb">
+                        <div class="proj-thumb-grid"></div><i class="fa-solid fa-wine-bottle proj-icon"></i>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">ECOAR - USP</div>
+                        <p class="proj-desc">Site institucional desenvolvido para o grupo ECOAR - USP, projeto que
+                            também acompanha sistema administrativo para a aplicação.</p>
+                        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                                class="ptag">JavaScript</span><span class="ptag">PHP</span><span
+                                class="ptag">MySQL</span></div>
+                    </div>
+                    <div class="proj-footer"><span class="proj-link dim"><i class="fa-solid fa-lock"></i>Em breve</span>
+                    </div>
+                </a>
+
+                <a href="#" class="proj-card">
+                    <div class="proj-thumb">
+                        <div class="proj-thumb-grid"></div><i class="fa-solid fa-wine-bottle proj-icon"></i>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">GameStore</div>
+                        <p class="proj-desc">Sistema web de e-commerce de jogos digitais em desenvolvimento, com foco em
+                            simular uma aplicação real completa utilizando PHP, banco de dados e integração entre
+                            front-end e back-end.</p>
+                        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                                class="ptag">JavaScript</span><span class="ptag">PHP</span><span
+                                class="ptag">MySQL</span></div>
+                    </div>
+                    <div class="proj-footer"><span class="proj-link dim"><i class="fa-solid fa-lock"></i>Em breve</span>
+                    </div>
+                </a>
+
+                <a href="https://samuel208-max.github.io/ProjetoFormula/" target="_blank" class="proj-card">
+                    <div class="proj-thumb">
+                        <div class="proj-thumb-grid"></div><i class="fa-solid fa-flag-checkered proj-icon"></i>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">Projeto Fórmula 1</div>
+                        <p class="proj-desc">Site com dados, curiosidades e estatísticas sobre pilotos, equipes e
+                            corridas da Fórmula 1. Feito ainda no começo dos estudos</p>
+                        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span></div>
+                    </div>
+                    <div class="proj-footer"><span class="proj-link"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Ver projeto</span></div>
+                </a>
+                <a href="https://samuel208-max.github.io/ProjetoCarrinhoJS/" target="_blank" class="proj-card">
+                    <div class="proj-thumb">
+                        <div class="proj-thumb-grid"></div><i class="fa-solid fa-wine-bottle proj-icon"></i>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">Cadastro de Adega</div>
+                        <p class="proj-desc">Sistema para cadastro, consulta e gerenciamento de produtos de adega com
+                            nome, tipo, quantidade e preço. Projeto de estudo desenvolvido para desenvolver um sistema
+                            de adição de produtos e carrinho.</p>
+                        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+                                class="ptag">JavaScript</span></div>
+                    </div>
+                    <div class="proj-footer"><span class="proj-link"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i>Ver projeto</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="sec" id="contact">
+            <div class="sh"><span class="sh-num">05</span>
+                <h2 class="sh-title">// contato</h2>
+                <div class="sh-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="rev">
+                    <p class="contact-tagline">18 anos, primeiro emprego, muita energia para aprender. Disponível para
+                        projetos, parcerias ou só para trocar ideia sobre tech.</p>
+                    <div class="c-links">
+                        <a href="mailto:samuelferreiradev08@gmail.com" class="c-link"><i
+                                class="fa-solid fa-envelope"></i>samuelferreiradev08@gmail.com</a>
+                        <a href="https://wa.me/+5511950486252" target="_blank" class="c-link"><i
+                                class="fa-brands fa-whatsapp"></i>(11) 95048-6252</a>
+                        <a href="https://github.com/samuel208-max" target="_blank" class="c-link"><i
+                                class="fa-brands fa-github"></i>github.com/samuel208-max</a>
+                        <a href="#" class="c-link"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    </div>
+                </div>
+                <div class="c-json rev">
+                    <div class="cmt">// samuel.config.json</div>
+                    <div>{</div>
+                    <div>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="str">"Samuel Ferreira"</span>,</div>
+                    <div>&nbsp;&nbsp;<span class="key">"age"</span>: <span class="num">18</span>,</div>
+                    <div>&nbsp;&nbsp;<span class="key">"location"</span>: <span class="str">"São Paulo, SP"</span>,
+                    </div>
+                    <div>&nbsp;&nbsp;<span class="key">"studying_since"</span>: <span class="num">15</span>,</div>
+                    <div>&nbsp;&nbsp;<span class="key">"current_role"</span>: <span class="str">"Software Dev
+                            Intern"</span>,</div>
+                    <div>&nbsp;&nbsp;<span class="key">"daily_stack"</span>: [<span class="str">"React"</span>, <span
+                            class="str">"Node.js"</span>],</div>
+                    <div>&nbsp;&nbsp;<span class="key">"also_knows"</span>: [<span class="str">"PHP"</span>, <span
+                            class="str">"MySQL"</span>, <span class="str">"C#"</span>],</div>
+                    <div>&nbsp;&nbsp;<span class="key">"learning"</span>: [<span class="str">"Flutter"</span>, <span
+                            class="str">"Unity"</span>],</div>
+                    <div>&nbsp;&nbsp;<span class="key">"available"</span>: <span class="bool">true</span></div>
+                    <div>}</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>© 2025 <span>Samuel Ferreira</span> — feito com <span>&lt;/&gt;</span> e muita determinação</div>
+            <div>São Paulo, SP · Brasil</div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
