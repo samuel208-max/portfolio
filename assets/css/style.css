@@ -104,6 +104,11 @@ nav {
     color: var(--text-muted);
 }
 
+.n-logo a {
+    color: var(--green);
+    text-decoration: none;
+}
+
 .n-links {
     display: flex;
     gap: 28px;
